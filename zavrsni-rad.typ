@@ -1,0 +1,78 @@
+// У овом фајлу је потребно да укључите поглавља. Видети TODO доле.
+// Такође, видите metadata.typ
+
+#set page(paper: "iso-b5", margin: (y: 2.5cm, inside: 2cm, outside: 1.5cm))
+#include "naslovna.typ"
+#pagebreak()
+#pagebreak()
+#include "zadatak.typ"
+#pagebreak()
+#pagebreak()
+#include "kljucna.typ"
+
+#set text(lang: "sr")
+
+#set document(title: "Наслов рада", author: "Аутор")
+#set heading(numbering: "1.1")
+#set text(font: "Liberation Serif")
+#set par(justify: true)
+#show link: set text(blue)
+#show cite: set text(blue)
+#show ref: set text(blue)
+
+#show figure.where(
+  kind: table
+): set figure.caption(position: top)
+#show figure.where(kind: raw): set figure(supplement: [Листинг])
+#set ref(supplement: none)
+
+
+#import "@preview/hydra:0.6.2": hydra
+
+#show heading.where(level: 1): (it) => {
+      pagebreak(to: "odd", weak: true)
+      set block(spacing: 8pt)
+      if heading.numbering != none {
+          text("Глава " + counter(heading).display(), size: 22pt)
+      }
+      line(length: 100%)
+      rect(align(right + horizon, text(it.body, size: 22pt)), fill: white, width: 100%)
+      line(length: 100%)
+      v(1em)
+}
+
+#outline(title: [Садржај], depth: 2)
+
+#set page(header: context {
+     // Хедери са текућим секцијама не иду на страницу са поглављима
+     if not (query(heading.where(level: 1)).any(h => h.location().page() == here().page())) {
+        if calc.odd(here().page()) {
+            align(right, emph(hydra(1)))
+        } else {
+            align(left, emph(hydra(2)))
+        }
+        line(length: 100%)
+     }
+})
+
+#pagebreak(to: "odd", weak: false)
+#set heading(numbering: "1.1")
+#set page(numbering: "1")
+#counter(page).update(1)
+
+
+// TODO: Овде укључујете поглавља
+#include "poglavlja/1-uvod.typ"
+#include "poglavlja/2-stanje.typ"
+#include "poglavlja/7-zakljucak.typ"
+
+
+
+#outline(title: "Списак слика", target: figure.where(kind: image))
+#outline(title: "Списак листинга", target: figure.where(kind: raw))
+#outline(title: "Списак табела", target: figure.where(kind: table))
+
+#set heading(numbering: none)
+#include "biografija.typ"
+
+#bibliography(title: [Литература], "literatura.bib")
