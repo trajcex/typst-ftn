@@ -3,21 +3,25 @@
 
 // На енглеском
 #let naslov_eng = "Template and tutorial for thesis preparation"
-#let autor_eng = "Upisati ime i prezime"
+#let autor_eng = "Upisati ime i prezime na latinici"
 
 #let indeks = "Уписати индекс"
 
+// Име и презиме ментора
 #let mentor = "Игор Дејановић"
+// Звање: редовни професор, ванредни професор, доцент
 #let mentor_zvanje = "редовни професор"
 
+// Скинути коментаре са одговарајућих линија
 #let studijski_program = "Софтверско инжењерство и информационе технологије"
-#let godina = [#datetime.today().year()]
-
-// Скинути коментар са одговарајуће линијe
+//#let studijski_program = "Рачунарство и аутоматика"
 #let stepen = "Мастер академске студије"
 //#let stepen = "Основне академске студије"
 
+#let godina = [#datetime.today().year()]
+
 // Поглавља/страна/цитата/табела/слика/графика/прилога
+// FIXME: Ово би могло да се аутоматски калкулише
 #let fizicki_opis = "3/27/3/1/1/0/3"
 
 #let kljucne_reci = "Шаблон, завршни рад, упутство"
