@@ -1,3 +1,4 @@
+
 #let naslov = "Шаблон и упутство за писање завршних радова"
 #let autor = "Уписати име и презиме"
 
@@ -20,9 +21,9 @@
 
 #let godina = [#datetime.today().year()]
 
-// Поглавља/страна/цитата/табела/слика/графика/прилога
-// FIXME: Ово би могло да се аутоматски калкулише
-#let fizicki_opis = "3/27/3/1/1/0/3"
+// FIXME: Број цитата треба да се аутоматски преброји
+#let broj_citata = 4
+#let broj_priloga = 0
 
 #let kljucne_reci = "Шаблон, завршни рад, упутство"
 #let apstrakt = [
@@ -79,3 +80,7 @@
 #let oblast_eng = "Electrical and Computer Engineering"
 #let disciplina = "Примењене рачунарске науке и информатика"
 #let disciplina_eng = "Applied computer science and informatics"
+
+#import "funkcije.typ": *
+// Поглавља/страна/цитата/табела/слика/графика/прилога
+#let fizicki_opis = physical(broj_citata, broj_priloga)
