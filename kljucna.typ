@@ -2,81 +2,91 @@
 // Све параметре подешавате у metadata.typ
 
 #import "metadata.typ": *
-#set text(size: 6.5pt, font: "Liberation Sans")
+
+#let velicina_fonta = if format_strane == "a4" {
+     7.5pt
+} else {
+     6.5pt
+}
+
+#set text(size: velicina_fonta, font: "Liberation Sans")
 #set rect(inset: 0pt)
 
 // Поставити на другу боју за дебаговање. Нпр. red
 #let clr = white
-#let left_edge = 137.5pt
+#let left_edge = 36.9%
+#let left_edge_eng = 36.7%
+#let left_edge_komisija = 34.7%
+#let left_edge_eng_komisija = 34.7%
 
 #block({
   image("logo/kljucna-srp.png", height: 100%)
   place(left + top,
-    dy: 120pt,
+    dy: 21.2%,
     dx: left_edge,
     rect(align(left + horizon, vrsta_rada), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 133pt,
+    dy: 23.6%,
     dx: left_edge,
     rect(align(left + horizon, autor), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 146pt,
+    dy: 25.8%,
     dx: left_edge,
     rect(align(left + horizon, "Др " + mentor + ", " + mentor_zvanje), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 162pt,
+    dy: 28.7%,
     dx: left_edge,
     rect(align(left, naslov), fill: clr, width: 59%, height: 27pt)
   )
   place(left + top,
-    dy: 242pt,
+    dy: 42.5%,
     dx: left_edge,
     rect(align(left + horizon, godina), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 281pt,
+    dy: 49.8%,
     dx: left_edge,
     rect(align(left + horizon, fizicki_opis), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 295pt,
+    dy: 52.2%,
     dx: left_edge,
     rect(align(left + horizon, oblast), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 309pt,
+    dy: 54.6%,
     dx: left_edge,
     rect(align(left + horizon, disciplina), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 323pt,
+    dy: 57%,
     dx: left_edge,
     rect(align(left + horizon, kljucne_reci), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 393pt,
+    dy: 69.5%,
     dx: left_edge,
     rect(align(left, apstrakt), fill: clr, width: 59%, height: 100pt)
   )
 
   // Комисија
   place(left + top,
-    dy: 518pt,
-    dx: 130pt,
-    rect(align(left + horizon, "Др " + komisija_predsednik + ", " + komisija_predsednik_zvanje), fill: clr, width: 160pt, height: 12pt)
+    dy: 91.35%,
+    dx: left_edge_komisija,
+    rect(align(left + horizon, "Др " + komisija_predsednik + ", " + komisija_predsednik_zvanje), fill: clr, width: 40%, height: 12pt)
   )
   place(left + top,
-    dy: 531pt,
-    dx: 130pt,
-    rect(align(left + horizon, "Др " + komisija_clan + ", " + komisija_clan_zvanje), fill: clr, width: 160pt, height: 12pt)
+    dy: 93.66%,
+    dx: left_edge_komisija,
+    rect(align(left + horizon, "Др " + komisija_clan + ", " + komisija_clan_zvanje), fill: clr, width: 40%, height: 12pt)
   )
   place(left + top,
-    dy: 544pt,
-    dx: 130pt,
-    rect(align(left + horizon, "Др " + mentor + ", " + mentor_zvanje), fill: clr, width: 160pt, height: 12pt)
+    dy: 95.98%,
+    dx: left_edge_komisija,
+    rect(align(left + horizon, "Др " + mentor + ", " + mentor_zvanje), fill: clr, width: 40%, height: 12pt)
   )
 
 })
@@ -86,65 +96,65 @@
 #block({
   image("logo/kljucna-eng.png", height: 100%)
   place(left + top,
-    dy: 137pt,
-    dx: 135pt,
+    dy: 24.1%,
+    dx: left_edge_eng,
     rect(align(left + horizon, autor_eng), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 151pt,
-    dx: 135pt,
+    dy: 26.5%,
+    dx: left_edge_eng,
     rect(align(left + horizon, mentor_eng + ", Phd., " + mentor_zvanje_eng), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 166pt,
-    dx: 135pt,
+    dy: 29.4%,
+    dx: left_edge_eng,
     rect(align(left, naslov_eng), fill: clr, width: 59%, height: 27pt)
   )
   place(left + top,
-    dy: 245pt,
-    dx: 135pt,
+    dy: 43.0%,
+    dx: left_edge_eng,
     rect(align(left + horizon, godina), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 282pt,
-    dx: 135pt,
+    dy: 50.0%,
+    dx: left_edge_eng,
     rect(align(left + horizon, fizicki_opis), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 300pt,
-    dx: 135pt,
+    dy: 53.0%,
+    dx: left_edge_eng,
     rect(align(left + horizon, oblast_eng), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 314pt,
-    dx: 135pt,
+    dy: 55.3%,
+    dx: left_edge_eng,
     rect(align(left + horizon, disciplina_eng), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 327pt,
-    dx: 135pt,
+    dy: 57.7%,
+    dx: left_edge_eng,
     rect(align(left + horizon, kljucne_reci_eng), fill: clr, width: 59%, height: 12pt)
   )
   place(left + top,
-    dy: 392pt,
-    dx: 135pt,
+    dy: 69.5%,
+    dx: left_edge_eng,
     rect(align(left, apstrakt_eng), fill: clr, width: 59%, height: 100pt)
   )
 
   // Комисија
   place(left + top,
-    dy: 518pt,
-    dx: 127pt,
-    rect(align(left + horizon, komisija_predsednik_eng + ", Phd., " + komisija_predsednik_zvanje_eng), fill: clr, width: 159pt, height: 11pt)
+    dy: 91.35%,
+    dx: left_edge_eng_komisija,
+    rect(align(left + horizon, komisija_predsednik_eng + ", Phd., " + komisija_predsednik_zvanje_eng), fill: clr, width: 39%, height: 12pt)
   )
   place(left + top,
-    dy: 532pt,
-    dx: 127pt,
-    rect(align(left + horizon, komisija_clan_eng + ", Phd., " + komisija_clan_zvanje_eng), fill: clr, width: 159pt, height: 11pt)
+    dy: 93.65%,
+    dx: left_edge_eng_komisija,
+    rect(align(left + horizon, komisija_clan_eng + ", Phd., " + komisija_clan_zvanje_eng), fill: clr, width: 39%, height: 12pt)
   )
   place(left + top,
-    dy: 544pt,
-    dx: 127pt,
-    rect(align(left + horizon, mentor_eng + ", Phd., " + mentor_zvanje_eng), fill: clr, width: 159pt, height: 11pt)
+    dy: 95.8%,
+    dx: left_edge_eng_komisija,
+    rect(align(left + horizon, mentor_eng + ", Phd., " + mentor_zvanje_eng), fill: clr, width: 39%, height: 12pt)
   )
 })

@@ -1,7 +1,8 @@
 // У овом фајлу је потребно да укључите поглавља. Видети TODO доле.
 // Такође, видите metadata.typ
 
-#set page(paper: "iso-b5", margin: (y: 2.5cm, inside: 2cm, outside: 1.5cm))
+#import "metadata.typ": *
+#set page(paper: format_strane, margin: (y: 2.5cm, inside: 2cm, outside: 1.5cm))
 #include "naslovna.typ"
 #pagebreak()
 #pagebreak()
@@ -16,7 +17,7 @@
 
 #set document(title: "Наслов рада", author: "Аутор")
 #set heading(numbering: "1.1")
-#set text(font: "Liberation Serif")
+#set text(font: "Liberation Serif", size: 11pt)
 #set par(justify: true)
 #show link: set text(blue)
 #show cite: set text(blue)
