@@ -71,6 +71,11 @@
     dx: left_edge,
     rect(align(left, apstrakt), fill: clr, width: 59%, height: 100pt)
   )
+  place(left + top,
+    dy: 89%,
+    dx: left_edge,
+    rect(align(left + horizon, datum_odbrane), fill: clr, width: 59%, height: 12pt)
+  )
 
   // Комисија
   place(left + top,
@@ -139,6 +144,11 @@
     dy: 69.5%,
     dx: left_edge_eng,
     rect(align(left, apstrakt_eng), fill: clr, width: 59%, height: 100pt)
+  )
+  place(left + top,
+    dy: 89%,
+    dx: left_edge,
+    rect(align(left + horizon, datum_odbrane), fill: clr, width: 59%, height: 12pt)
   )
 
   // Комисија
