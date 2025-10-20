@@ -1,23 +1,29 @@
 #let format_strane = "iso-b5"         // могуће вредности: iso-b5, a4
-#let naslov = "Шаблон и упутство за писање завршних радова"
-#let autor = "Уписати име и презиме"
+#let naslov = (
+  "Дизајн и реализација дистрибуираног " + [_CI/CD_] +
+  " алата са подршком за " + [_2FA_] +
+  ", нотификације и корисничку аналитику"
+)
+
+
+#let autor = "Никола Трајковић"
 
 // На енглеском
-#let naslov_eng = "Template and tutorial for thesis preparation"
-#let autor_eng = "Upisati ime i prezime na latinici"
+#let naslov_eng = "Design and Implementation of a Distributed CI/CD Tool with Support for 2FA, Notifications, and User Analytics"
+#let autor_eng = "Nikola Trajković"
 
-#let indeks = "Уписати индекс"
+#let indeks = "SV45/2021"
 
 // Име и презиме ментора
-#let mentor = "Игор Дејановић"
+#let mentor = "Бранко Милосављевић"
 // Звање: редовни професор, ванредни професор, доцент
 #let mentor_zvanje = "редовни професор"
 
 // Скинути коментаре са одговарајућих линија
 #let studijski_program = "Софтверско инжењерство и информационе технологије"
 //#let studijski_program = "Рачунарство и аутоматика"
-#let stepen = "Мастер академске студије"
-//#let stepen = "Основне академске студије"
+// #let stepen = "Мастер академске студије"
+#let stepen = "Основне академске студије"
 
 #let godina = [#datetime.today().year()]
 
@@ -57,7 +63,7 @@
 // На енглеском уписати чланове на латиници
 #let komisija_predsednik_eng = "Petar Petrović"
 #let komisija_clan_eng = "Marko Marković"
-#let mentor_eng = "Igor Dejanović"
+#let mentor_eng = "Branko Milosavljević"
 
 
 // Ово даље углавном не треба мењати.
@@ -78,8 +84,9 @@
     "Дипломски - бечелор рад"
 }
 
-#let oblast = "Електротехничко и рачунарско инжењерство"
-#let oblast_eng = "Electrical and Computer Engineering"
+#let oblast = "Софтверско инжењерство и
+информационе технологије"
+#let oblast_eng = "Software Engineering and Information Technologies"
 #let disciplina = "Примењене рачунарске науке и информатика"
 #let disciplina_eng = "Applied computer science and informatics"
 
