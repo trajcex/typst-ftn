@@ -49,20 +49,26 @@
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.
 #let zadatak = [
-     #lorem(100)
+     Анализирати концепте, архитектуру и начин рада постојећих _CI/CD_ алата. Анализирати
+     технологије за имплементацију двофакторске аутентификације. Анализирати механизме за
+     интеграцију _CI/CD_ система са системима за контролу верзија. Дефинисати архитектуру
+     и имплементирати _CI/CD_ систем који омогућава извршавање задатака на више чворова
+     помоћу дистрибуираних агената, поседује двофакторску аутентификацију, нотификације
+     вођене догађајима и кориснички интерфејс за надзор рада система. Документовати решење
+     и дискутовати добијене резултате.
 ]
 
 // Одбрана
-#let datum_odbrane = "01.01.2025"
+#let datum_odbrane = ""
 // Комисија
-#let komisija_predsednik = "Петар Петровић"
-#let komisija_predsednik_zvanje = "ванредни професор"
-#let komisija_clan = "Марко Марковић"
-#let komisija_clan_zvanje = "доцент"
+#let komisija_predsednik = "Горан Сладић"
+#let komisija_predsednik_zvanje = "редовни професор"
+#let komisija_clan = "Мирослав Зарић"
+#let komisija_clan_zvanje = "редовни професор"
 
 // На енглеском уписати чланове на латиници
-#let komisija_predsednik_eng = "Petar Petrović"
-#let komisija_clan_eng = "Marko Marković"
+#let komisija_predsednik_eng = "Goran Sladić"
+#let komisija_clan_eng = "Miroslav Zarić"
 #let mentor_eng = "Branko Milosavljević"
 
 
