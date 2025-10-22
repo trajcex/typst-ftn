@@ -67,6 +67,7 @@
 // TODO: Овде укључујете поглавља
 #include "poglavlja/1-uvod.typ"
 #include "poglavlja/2-alati.typ"
+#include "poglavlja/3-specifikacija.typ"
 #include "poglavlja/7-zakljucak.typ"
 // #include "poglavlja/uvod.typ"
 
