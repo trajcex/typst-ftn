@@ -78,10 +78,5 @@
 #include "4.3-upravljanje_korisnicima_agentima.typ"
 #include "4.4-job.typ"
 #include "4.5-notifikacije.typ"
-== Интеграције са спољним системима
-=== Подршка за GitHub и GitLab webhook-ове
-=== Генерисање и управљање API кључевима
-
-== Корисничка аналитика
-=== Сакупљање и обрада података о корисницима
-=== Интеграција са Umami и PostHog системима
+#include "4.6-integracija.typ"
+#include "4.7-analitika.typ"
