@@ -76,11 +76,7 @@
   )<fig:class_diagram>
 #include "4.2-bezbednost.typ"
 #include "4.3-upravljanje_korisnicima_agentima.typ"
-
-== Управљање пословима (Job-овима)
-=== Креирање и конфигурисање послова
-=== Извршавање послова
-=== Историја извршавања и артефакти
+#include "4.4-job.typ"
 #include "4.5-notifikacije.typ"
 == Интеграције са спољним системима
 === Подршка за GitHub и GitLab webhook-ове
