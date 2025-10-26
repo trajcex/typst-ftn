@@ -33,18 +33,15 @@
 // Такође унети ручно и број прилога.
 #let broj_priloga = 0
 
-#let kljucne_reci = "Шаблон, завршни рад, упутство"
+#let kljucne_reci = "CI/CD системи, мастер-агент архитектура, дистрибуирано извршавање задатака"
 #let apstrakt = [
-     Овај документ представља упутство за писање завршних радова на Факултету
-     техничких наука Универзитета у Новом Саду. У исто време је и шаблон за Typst.
+   Представљена је имплементација система који омогућава дистрибуирано извршавање задатака у оквиру мастер-агент софтверске архитектуре. Систем се састоји од постојећих компоненти отвореног кода и сопствених решења
 ]
 
 // На енглеском
-#let kljucne_reci_eng = "Template, thesis, tutorial"
+#let kljucne_reci_eng = "CI/CD systems, master-agent architecture, distributed task execution"
 #let apstrakt_eng = [
-     This document provides guidelines for writing final theses at the Faculty
-     of Technical Sciences, University of Novi Sad. At the same time, it serves
-     as a Typst template.
+    The implementation of a system that enables distributed task execution within a master-agent software architecture is presented. The system consists of existing open-source components and custom-built solutions.
 ]
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.

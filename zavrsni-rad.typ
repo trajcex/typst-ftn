@@ -7,11 +7,7 @@
 #pagebreak()
 #pagebreak()
 #include "zadatak.typ"
-#pagebreak()
-#pagebreak()
-#include "kljucna.typ"
-#pagebreak()
-#include "sukob-interesa.typ"
+
 
 #set text(lang: "sr")
 
@@ -82,3 +78,7 @@
 #include "biografija.typ"
 
 #bibliography(title: [Литература], "literatura.bib")
+#pagebreak(to: "odd")
+#include "kljucna.typ"
+#pagebreak(to: "odd")
+#include "sukob-interesa.typ"
