@@ -70,7 +70,7 @@
 #include "poglavlja/3-specifikacija.typ"
 #include "poglavlja/4-implementacija.typ"
 #include "poglavlja/7-zakljucak.typ"
-#include "poglavlja/uvod.typ"
+// #include "poglavlja/uvod.typ"
 
 
 
