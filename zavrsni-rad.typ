@@ -66,8 +66,8 @@
 
 // TODO: Овде укључујете поглавља
 #include "poglavlja/1-uvod.typ"
-#include "poglavlja/2-alati.typ"
-#include "poglavlja/3-specifikacija.typ"
+#include "poglavlja/2-funkcije.typ"
+#include "poglavlja/3-arhitektura.typ"
 #include "poglavlja/4-implementacija.typ"
 #include "poglavlja/7-zakljucak.typ"
 // #include "poglavlja/uvod.typ"
@@ -75,8 +75,8 @@
 
 
 #outline(title: "Списак слика", target: figure.where(kind: image))
-#outline(title: "Списак листинга", target: figure.where(kind: raw))
-#outline(title: "Списак табела", target: figure.where(kind: table))
+//#outline(title: "Списак листинга", target: figure.where(kind: raw))
+//#outline(title: "Списак табела", target: figure.where(kind: table))
 
 #set heading(numbering: none)
 #include "biografija.typ"
