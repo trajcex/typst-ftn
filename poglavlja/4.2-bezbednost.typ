@@ -15,7 +15,7 @@
 
 На Слици @fig:2fa приказан је изглед корисничког интерфејса при активирању двофакторске аутентикације, где се приказује генерисани QR код и поље за унос једнократног кода.
 
-#figure([#box(width: 35%, image("../slike/2fa.png"));],
+#figure([#box(width: 50%, image("../slike/2fa.png"));],
   caption: [
     Активирање двофакторске аутентикације (2FA)
   ]
@@ -30,6 +30,8 @@
 
 Контрола приступа имплементирана је у оквиру _Django REST Framework_ механизма дозвола. Сваки захтев који долази до API-ја пролази кроз проверу аутентификације и улоге.  За то се користе класе _IsAdmin_ и _IsRegular_, које одређују да ли корисник има право приступа одређеном ресурсу.
 
+
+#figure(
 ```python
 class IsAdmin(BasePermission):
     def has_permission(self, request, view):
@@ -39,6 +41,10 @@ class IsRegular(BasePermission):
     def has_permission(self, request, view):
         return request.user.role == Role.REGULAR
 ```
+,
+    caption: [Имплементација класа за контролу приступа.]
+) <lst:permisije>
+
 
 Аутентификација се спроводи помоћу JWT токена, што обезбеђује сигуран и _stateless_ приступ систему.  
 
@@ -68,7 +74,7 @@ _Nginx_ прослеђује HTTP и _WebSocket_ захтеве ка _Django_ а
 Пример конфигурације Nginx сервера приказан је на Слици @fig:nginx_config и илуструје начин прослеђивања захтева ка _Django_ апликацији, _MinIO_ складишту и _Gitea_ систему.
 
 
-#figure([#box(width: 55%, image("../slike/nginx_config.png"));],
+#figure([#box(width: auto, image("../slike/nginx_config.png"));],
     caption: [
       Конфигурација _Nginx reverse proxy_ сервера
     ]

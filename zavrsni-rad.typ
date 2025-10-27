@@ -71,7 +71,7 @@
 
 
 #outline(title: "Списак слика", target: figure.where(kind: image))
-//#outline(title: "Списак листинга", target: figure.where(kind: raw))
+#outline(title: "Списак листинга", target: figure.where(kind: raw))
 //#outline(title: "Списак табела", target: figure.where(kind: table))
 
 #set heading(numbering: none)
