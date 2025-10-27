@@ -56,7 +56,7 @@
 ]
 
 // Одбрана
-#let datum_odbrane = ""
+#let datum_odbrane = "31.10.2025."
 // Комисија
 #let komisija_predsednik = "Горан Сладић"
 #let komisija_predsednik_zvanje = "редовни професор"
