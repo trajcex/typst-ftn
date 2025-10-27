@@ -35,4 +35,4 @@
 
 
 
-#align(center + bottom, text([Нови Сад, #godina], size: 18pt))
+#align(center + bottom, text([Нови Сад, #godina.], size: 18pt))
